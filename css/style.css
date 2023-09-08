@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 1.4em;
+    margin-left: 25px;
+}
+
+h2 {
+    margin-left: 25px;
+    font-size: 1.3em;
+    margin-top: 50px;
+}
+
+#Bentinho {
+    margin-left: 850px;
+    margin-top: -100px;
+}
+
+#api {
+    position: relative;
+    width: 650px;
+    height: 650px;
+    background-color: #181d2c;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    left: 7px;
+    flex-direction: column;
+    font-size: 1.2em;
+    color: #fafafa;
+    text-indent: 4px;
+}
+
+#single {
+    position: relative;
+    width: 650px;
+    height: 650px;
+    background-color: #181d2c;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: -650px;
+    margin-left: 30px;
+    left: 655px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    color: #fafafa;
+    text-indent: 4px;
+}
+
+.CA::before,
+.CA::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    /* serve para deixar a caixa de cima sobre o rgb */
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background: linear-gradient(45deg, #ffff00, #00ff00, #09f, #001aff, #a200ff, #f05, #f00,
+            #ffff00, #00ff00, #09f, #001aff, #a200ff);
+    /*rbg*/
+    background-size: 300%;
+    border-radius: 5px;
+    animation: AnimarBorda 10s linear infinite;
+
+}
+
+@keyframes AnimarBorda {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 300%;
+    }
+}
+
+.CA::after {
+    filter: blur(30px);
+}
+
+#diferença {
+    margin-top: 50px;
+
+}
+
+h3 {
+    margin-left: 270px;
+    margin-top: 25px;
+}
+
+h4 {
+    margin-left: 940px;
+    margin-top: -20px;
+}
+
+h5 {
+    margin-left: 580px;
+    font-size: 1.3em;
+}
+
+#aa {
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 1.1em;
+    text-indent: 4px;
+}
+
+#bb {
+    margin-left: 800px;
+    font-size: 1.1em;
+    margin-top: -485px;
+    text-indent: 4px;
+    ;
+}
+
+#DIF {
+    margin-left: 52%;
+    margin-top: -40px;
+    width: 50px;
+    height: 50px;
+
+}
+
+body {
+    background-color: #181d2c;
+    color: #fafafa;
+    margin: 0;
+    transition: background 0.2s linear;
+}
+
+body.light {
+    background: #fafafa;
+    color: #000;
+}
+
+.checkbox {
+    opacity: 0;
+    position: relative;
+}
+
+.label {
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5)
+}
+
+.label .ball {
+    background-color: #000;
+    opacity: calc(0% -20px);
+    top: 2px;
+    position: absolute;
+    border-radius: 50%;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #ebcc51;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+#menu {
+    margin-top: -75px;
+    float: right;
+    margin-right: 25px;
+
+}
+
+footer {
+    display: flex;
+    height: 25%;
+}
+
+#dudu {
+    margin-left: 880px;
+    margin-top: -40px;
+}
+
+#like {
+    margin-left: 1160px;
+    margin-top: -55px;
+}
+
+p10 {
+    padding: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+p9 {
+    padding: 30px;
+    margin-top: -50px;
+    margin-left: 800px;
+}
+
+p7 {
+    font-size: 1.2em;
+    margin-left: 850px;
+    margin-top: 100px;
+}
+
+p8 {
+    font-size: 1.2em;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+#DESC {
+    margin-left: 10px;
+}
